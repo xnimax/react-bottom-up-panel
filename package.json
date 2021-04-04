@@ -1,7 +1,21 @@
 {
-  "name": "app-name",
-  "version": "0.1.0",
-  "private": true,
+  "name": "react-bottom-up-panel",
+  "version": "1.1.1",
+  "description": "React JS Bottom Up Panel",
+  "private": false,
+  "repository": "git://github.com/xnimax/react-concert-seat-picker.git",
+  "keywords": [
+    "React",
+    "Bottom",
+    "Panel",
+    "Javascript",
+    "Typescript"
+  ],
+  "author": "Nima Kazerouni",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/xnimax/react-bottom-up-panel/issues"
+  },
   "dependencies": {
     "@testing-library/jest-dom": "^5.11.4",
     "@testing-library/react": "^11.1.0",
@@ -10,9 +24,12 @@
     "@types/node": "^12.0.0",
     "@types/react": "^17.0.0",
     "@types/react-dom": "^17.0.0",
+    "@types/styled-components": "^5.1.9",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
+    "react-draggable": "^4.4.3",
     "react-scripts": "4.0.3",
+    "styled-components": "^5.2.3",
     "typescript": "^4.1.2",
     "web-vitals": "^1.0.1"
   },
