@@ -28,7 +28,7 @@ const Panel: FC<Props> = ({ children }) => {
   const handleDrag = (e: any, position: positionType) => {};
 
   return (
-    <Wrap>
+    <Wrap >
       <GlobalStyle />
       <Draggable
         nodeRef={nodeRef}
@@ -42,7 +42,9 @@ const Panel: FC<Props> = ({ children }) => {
         onStop={handleStop}
         onDrag={handleDrag}
       >
-        <Container className="bgPane" ref={nodeRef}>{children}</Container>
+        <Container className="bgPane" ref={nodeRef}>
+          {children}
+        </Container>
       </Draggable>
     </Wrap>
   );
@@ -51,7 +53,11 @@ const Panel: FC<Props> = ({ children }) => {
 export default Panel;
 
 const Wrap = styled.div`
-  height: ${WINDOW_HEIGHT};
+  position:absolute;
+  bottom:0;
+  width:100%;
+  left:0;
+  right:0;
   overflow: hidden;
 `;
 
